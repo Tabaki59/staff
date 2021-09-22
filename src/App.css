@@ -1,0 +1,106 @@
+.Main {
+  margin: 0 auto;
+  width: 720px;
+  background-color: rgb(226, 239, 250);
+}
+
+.Navbar{
+  background-color: rgb(204, 231, 255);
+  padding-top: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Company_name{
+  font-size: medium;
+  font-weight: 600;
+  padding-bottom: 1rem
+}
+
+.AddButton{
+ width: 100%;
+}
+
+.Modal{
+  background-color: white;
+  width: 720px;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 2%;
+  border-radius: 2%;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+#add div{
+  margin-bottom: 10px;
+}
+
+#change div{
+  margin-bottom: 10px;
+}
+
+.BottomButtons{
+  display: flex;
+    justify-content: space-around;
+}
+
+.StaffList{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Item{
+  height: 40px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: rgb(253, 221, 179);
+  border-radius: 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.PersonName{
+  margin-left: 15px;
+    height: 80%;
+    margin-top: 8px;
+}
+
+.ActionButtons{
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .Main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+  }
+
+  .Modal{
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding-left: 1%;
+  }
+
+  #add div{
+    margin-bottom: 5px;
+  }
+  #change div{
+    margin-bottom: 5px;
+  }
+}
