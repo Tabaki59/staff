@@ -14,6 +14,58 @@ const Positions = [
   { key: 5, position: "Дядя охранник" },
 ];
 
+
+const array = [
+  {
+      "key": "1",
+      "name": "Борис",
+      "surname": "Вишневский",
+      "patronymic": "Васильевич",
+      "position": 1,
+      "bday": "2012-04-23T18:25:43.511Z",
+      "sex": "Муж.",
+      "startday": "2016-04-23T18:25:43.511Z",
+      "finishday": "2018-04-23T18:25:43.511Z",
+      "rights": "on"
+      },
+      {
+        "key": "2",
+        "name": "Борис",
+        "surname": "Вишневский",
+        "patronymic": "Александрович",
+        "position": 2,
+        "bday": "2012-04-23T18:25:43.511Z",
+        "sex": "Муж.",
+        "startday": "2016-04-23T18:25:43.511Z",
+        "finishday": "2018-04-23T18:25:43.511Z",
+        "rights": "on"
+        },
+        {
+          "key": "3",
+          "name": "Борис",
+          "surname": "Вишневский",
+          "patronymic": "Лазаревич",
+          "position": 3,
+          "bday": "2012-04-23T18:25:43.511Z",
+          "sex": "Муж.",
+          "startday": "2016-04-23T18:25:43.511Z",
+          "finishday": "2018-04-23T18:25:43.511Z",
+          "rights": ""
+          },
+          {
+            "key": "4",
+            "name": "Борис",
+            "surname": "Вишневский",
+            "patronymic": "Настоящевич",
+            "position": 4,
+            "bday": "2012-04-23T18:25:43.511Z",
+            "sex": "Муж.",
+            "startday": "2016-04-23T18:25:43.511Z",
+            "finishday": "2018-04-23T18:25:43.511Z",
+            "rights": ""
+            }
+]
+
 export default class App extends Component {
   constructor() {
     super();
@@ -26,7 +78,9 @@ export default class App extends Component {
     this.GetData = this.GetData.bind(this)
   }
 
-   async GetData() {
+    async GetData() {
+      console.log(array)
+      array.map((el) => localStorage.setItem(el.key, JSON.stringify(el)))
     var values = [],
         keys = Object.keys(localStorage),
         i = keys.length;
